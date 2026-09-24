@@ -1,0 +1,309 @@
+/* ESTILOS GENERALES: usados por todas las páginas */
+:root {
+    --blanco: #fff;
+    --fondo: #f6f9fa;
+    --texto: #172033;
+    --texto-suave: #58687a;
+    --primario: #168aad;
+    --secundario: #0b6477;
+    --borde: #dce8eb;
+}
+
+html { 
+    box-sizing: border-box; 
+    font-size: 62.5%; 
+    scroll-behavior: smooth; 
+}
+*, *::before, *::after { 
+    box-sizing: inherit; 
+}
+body { 
+    margin: 0; 
+    color: var(--texto); 
+    background: var(--fondo); 
+    font: 1.6rem/1.5 Arial, sans-serif; 
+}
+h1, h2, h3, p { 
+    margin-top: 0; 
+}
+h2 { 
+    font-size: clamp(2.6rem, 4vw, 3.4rem); 
+}
+h3 { 
+    font-size: 1.9rem; 
+}
+a { 
+    color: inherit; 
+}
+.contenedor, main.contenedor { 
+    width: min(120rem, 92%); margin: 0 auto; 
+}
+.etiqueta { 
+    color: var(--secundario); 
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    letter-spacing: .12em; 
+    text-transform: uppercase; 
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+.head { 
+    display: flex; align-items: center; 
+    justify-content: space-between; 
+    gap: 2rem; 
+    padding: 1.2rem 4%; 
+    background: var(--blanco); 
+}
+.logo { 
+    display: flex; 
+    align-items: center;
+    gap: 1.2rem;
+    text-decoration: none;
+    color: var(--texto);
+}
+.logo img { 
+    width: 6rem; 
+    height: auto; 
+}
+.logo h1, .logo span { 
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.navegacion-principal { 
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
+}
+.head .navegacion-principal.contenedor { 
+    width: auto; 
+    margin: 0; 
+}
+.navegacion-principal a { 
+    padding: .5rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s;
+}
+.navegacion-principal a:hover, .navegacion-principal a[aria-current="page"] {
+    color: var(--primario); 
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    border: 0;
+    border-radius: .8rem;
+    color: var(--blanco);
+    background: var(--primario);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+.boton:hover { 
+    background: var(--secundario); 
+    transform: translateY(-2px); 
+}
+
+/* TARJETAS DE SERVICIO: inicio y servicios */
+.servicios { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.servicio { 
+    padding: 3rem 2.5rem;
+    border: 1px solid var(--borde);
+    border-radius: 1.5rem;
+    background: var(--blanco);
+}
+.servicio .icon { 
+    margin-bottom: 2rem;
+}
+.servicio .icon svg { 
+    width: 5.6rem;
+    height: 5.6rem;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    color: var(--secundario);
+    stroke: var(--secundario);
+    background: #e7f3f5;
+}
+.servicio h3 { 
+    margin-bottom: 1rem;
+}
+.servicio p { 
+    margin-bottom: 0;
+    color: var(--texto-suave);
+}
+
+/* PASOS DEL PROCESO: inicio y servicios */
+.flujos { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+.flujo { 
+    position: relative;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.flujo:not(:last-child)::after { 
+    content: "";
+    position: absolute;
+    top: 4.2rem;
+    left: calc(50% + 3rem);
+    width: calc(100% - 5rem);
+    height: 2px;
+    background: var(--borde);
+}
+.icono-flujo { 
+    display: grid;
+    place-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    color: var(--blanco);
+    background: var(--secundario);
+}
+.flujo p { 
+    margin: 0;
+    font-weight: 600;
+}
+
+/* TARJETAS DE SOLUCIONES: inicio y servicios */
+.proyectos { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    color: var(--blanco);
+    background: var(--texto);
+}
+.proyectos-encabezado { 
+    grid-column: 1 / -1;
+}
+.proyectos-encabezado h2 { 
+    margin-bottom: .5rem;
+}
+.proyectos-encabezado p { 
+    margin-bottom: 1rem;
+    color: #c6d6df;
+}
+.proyecto { 
+    height: 100%;
+    padding: 2.5rem;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 1.2rem;
+    background: rgba(255,255,255,.07);
+}
+.proyecto svg { 
+    width: 3.2rem;
+    height: 3.2rem;
+    color: #7bd5e7;
+}
+.proyecto-imagen { 
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .8rem;
+}
+.proyecto h3 { 
+    margin: 1.5rem 0 .7rem;
+}
+.proyecto p { 
+    margin-bottom: 0;
+    color: #dce8ec;
+}
+
+/* PIE DE PÁGINA */
+.footer { 
+    padding: 2.5rem 4%;
+    color: var(--blanco);
+    background: var(--texto);
+}
+.footer-contenido { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.footer p { 
+    margin: 0;
+    color: #dce8ec;
+}
+.icono-footer { 
+    display: flex;
+    gap: 1rem;
+}
+.icono-footer a { 
+    display: grid;
+    place-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    color: var(--blanco);
+    background: rgba(255,255,255,.1);
+}
+.icono-footer a:hover { 
+    background: var(--primario);
+}
+.footer-cta { 
+    color: var(--blanco);
+    font-weight: 700;
+    text-underline-offset: .3rem;
+}
+
+/* AJUSTES COMPARTIDOS PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 800px) {
+    .head { 
+        flex-direction: column;
+        text-align: center;
+    }
+    .servicios { 
+        grid-template-columns: 1fr;
+    }
+    .flujos { 
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .flujo::after { 
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .head { 
+        padding: 1.5rem;
+    }
+    .logo { 
+        flex-direction: column;
+    }
+    .navegacion-principal { 
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5rem 1.5rem;
+    }
+    .navegacion-principal a { 
+        font-size: 1.4rem;
+    }
+    .flujos { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proyectos { 
+        grid-template-columns: 1fr;
+        padding: 2.5rem;
+    }
+    .footer-contenido { 
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Clean Clean</title>
+  <desc id="descripcion">Tarjeta verde agua con una ventana blanca que representa una página web.</desc>
+  <rect width="600" height="300" fill="#dff4f0"/>
+  <text x="300" y="105" fill="#135a66" font-family="Arial, sans-serif" font-size="40" font-weight="700" text-anchor="middle">Clean Clean</text>
+  <rect x="175" y="144" width="250" height="90" rx="8" fill="#172033" opacity=".12"/>
+  <rect x="175" y="136" width="250" height="90" rx="8" fill="#ffffff"/>
+  <g fill="#135a66">
+    <rect x="190" y="151" width="143" height="6" rx="3" opacity=".25"/>
+    <rect x="190" y="166" width="187" height="6" rx="3" opacity=".25"/>
+    <rect x="190" y="181" width="121" height="6" rx="3" opacity=".25"/>
+    <rect x="190" y="196" width="55" height="8" rx="4"/>
+  </g>
+</svg>

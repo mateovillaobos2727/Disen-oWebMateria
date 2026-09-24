@@ -1,0 +1,84 @@
+/* PRESENTACIÓN DE VEXO */
+.nosotros-hero { 
+    padding: 9rem 0;
+    color: var(--blanco);
+    background: linear-gradient(120deg,#172033,#0b6477);
+}
+.nosotros-hero .etiqueta { 
+    color: #a8e5ec;
+}
+.nosotros-hero h1 { 
+    max-width: 75rem;
+    margin-bottom: 2rem;
+    font-size: clamp(3.6rem,6vw,6rem);
+    line-height: 1.08;
+}
+.nosotros-hero p:last-child { 
+    max-width: 67rem;
+    margin-bottom: 0;
+    font-size: 1.9rem;
+    color: #e2eff2;
+}
+
+/* HISTORIA Y PRINCIPIOS */
+.historia { 
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    padding: 7rem 0;
+}
+.historia h2 { 
+    max-width: 38rem;
+}
+.historia p { 
+    color: var(--texto-suave);
+}
+.principios { 
+    padding: 5rem 0 7rem;
+    border-top: 1px solid var(--borde);
+}
+.principios h2 { 
+    margin-bottom: 3rem;
+}
+.principios-lista { 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.principios-lista article { 
+    padding: 2.5rem;
+    border-radius: 1.2rem;
+    background: var(--blanco);
+}
+.principios-lista span { 
+    color: var(--primario);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.principios-lista h3 { 
+    margin: 1.5rem 0 .8rem;
+}
+.principios-lista p { 
+    margin-bottom: 0;
+    color: var(--texto-suave);
+}
+
+/* CIERRE */
+.nosotros-cta { 
+    margin-bottom: 7rem !important;
+    padding: 4rem;
+    border-radius: 1.5rem;
+    background: #e5f2f5;
+    text-align: center;
+}
+.nosotros-cta p { 
+    color: var(--texto-suave);
+}
+@media (max-width: 750px) {
+    .historia, .principios-lista { 
+        grid-template-columns: 1fr;
+    }
+    .historia { 
+        gap: 1rem;
+    }
+}

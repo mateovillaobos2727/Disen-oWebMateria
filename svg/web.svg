@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Vista de creación de una página web</title>
+  <desc id="desc">Editor visual con herramientas, lienzo de una página y panel de estilos.</desc>
+  <rect width="640" height="400" rx="24" fill="#dcecef"/>
+  <rect x="28" y="28" width="584" height="344" rx="18" fill="#ffffff"/>
+  <path d="M46 28h548a18 18 0 0 1 18 18v29H28V46a18 18 0 0 1 18-18Z" fill="#172033"/>
+  <circle cx="50" cy="51" r="5" fill="#fa8b86"/>
+  <circle cx="68" cy="51" r="5" fill="#ffd083"/>
+  <circle cx="86" cy="51" r="5" fill="#74c7a3"/>
+  <rect x="212" y="43" width="217" height="16" rx="8" fill="#304456"/>
+  <path d="M46 75h96v297H46a18 18 0 0 1-18-18V75Z" fill="#f1f7f8"/>
+  <text x="45" y="108" fill="#172033" font-family="Arial, sans-serif" font-size="13" font-weight="700">Elementos</text>
+  <rect x="44" y="126" width="82" height="47" rx="8" fill="#ffffff" stroke="#bad3da"/>
+  <rect x="56" y="138" width="57" height="7" rx="3" fill="#168aad"/>
+  <rect x="56" y="153" width="40" height="6" rx="3" fill="#aac3cc"/>
+  <rect x="44" y="187" width="82" height="47" rx="8" fill="#ffffff" stroke="#bad3da"/>
+  <rect x="56" y="199" width="57" height="20" rx="4" fill="#a4d7e0"/>
+  <rect x="44" y="248" width="82" height="47" rx="8" fill="#ffffff" stroke="#bad3da"/>
+  <rect x="56" y="260" width="57" height="20" rx="4" fill="#dbe8f5"/>
+  <rect x="157" y="94" width="328" height="258" rx="8" fill="#ffffff" stroke="#cbdde2" stroke-width="2"/>
+  <rect x="157" y="94" width="328" height="34" rx="8" fill="#e9f2f4"/>
+  <circle cx="178" cy="111" r="8" fill="#168aad"/>
+  <rect x="197" y="107" width="63" height="7" rx="3" fill="#172033"/>
+  <g fill="#7596a2">
+    <rect x="353" y="108" width="29" height="5" rx="2"/>
+    <rect x="393" y="108" width="29" height="5" rx="2"/>
+    <rect x="433" y="108" width="29" height="5" rx="2"/>
+  </g>
+  <rect x="170" y="139" width="302" height="130" rx="8" fill="#dff1f3"/>
+  <rect x="186" y="157" width="115" height="11" rx="5" fill="#0b6477"/>
+  <rect x="186" y="177" width="150" height="7" rx="3" fill="#7aa5b0"/>
+  <rect x="186" y="191" width="132" height="7" rx="3" fill="#7aa5b0"/>
+  <rect x="186" y="218" width="78" height="25" rx="6" fill="#168aad"/>
+  <rect x="362" y="155" width="91" height="92" rx="9" fill="#89cfdb"/>
+  <circle cx="408" cy="184" r="16" fill="#dff1f3"/>
+  <path d="m369 239 24-25 19 16 17-17 24 26Z" fill="#0b6477"/>
+  <g fill="#e9f2f4">
+    <rect x="170" y="282" width="89" height="57" rx="7"/>
+    <rect x="276" y="282" width="89" height="57" rx="7"/>
+    <rect x="382" y="282" width="90" height="57" rx="7"/>
+  </g>
+  <path d="M501 75h111v279a18 18 0 0 1-18 18h-93Z" fill="#f1f7f8"/>
+  <text x="516" y="108" fill="#172033" font-family="Arial, sans-serif" font-size="13" font-weight="700">Estilos</text>
+  <rect x="516" y="128" width="77" height="35" rx="7" fill="#ffffff" stroke="#bad3da"/>
+  <circle cx="533" cy="145" r="9" fill="#168aad"/>
+  <circle cx="556" cy="145" r="9" fill="#172033"/>
+  <circle cx="579" cy="145" r="9" fill="#a4d7e0"/>
+  <g fill="#aac3cc">
+    <rect x="516" y="187" width="73" height="7" rx="3"/>
+    <rect x="516" y="208" width="58" height="7" rx="3"/>
+    <rect x="516" y="244" width="73" height="7" rx="3"/>
+    <rect x="516" y="265" width="63" height="7" rx="3"/>
+  </g>
+</svg>
